@@ -1,0 +1,47 @@
+CALL joke
+PUSH 0
+OUTTOP
+PUSHREG ax
+
+PUSH 1
+OUTTOP
+PUSHREG bx
+
+PUSH 0
+PUSHREG meow
+
+IN
+PUSHREG cat
+
+go:
+
+POPREG meow
+POPREG cat
+JNM enough
+POP
+PUSH 2
+ADD
+PUSHREG meow
+
+POPREG ax
+POPREG bx
+ADD
+OUTTOP
+PUSHREG ax
+POPREG ax
+POPREG bx
+ADD
+OUTTOP
+PUSHREG bx
+
+JUMP go
+
+enough:
+END
+
+joke:
+PUSH 100
+PUSH 200
+ADD
+OUTPOP
+RET
