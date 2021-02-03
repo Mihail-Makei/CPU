@@ -42,6 +42,6 @@ The stack machine has the following memory units:
  |CLEAR|None|Clears the Window.|
  |PARTCLEAR|None|Clears the rectangle with edges coordinates X1, Y1, X2, Y2. (X1, Y1, X2, Y2)|
  # Remarks
- * The numbers from the stack are removed after the calculation in ADD, SUB, MUL, DIV, MOD, SQRT commands.
- ** All the GPU commands (WINDOWSET, POINT, CIRCLE, etc.) take the arguments from the stack (so they appear in the reversed order). The direct order of the arguments is shown in the brackets.
- *** The data written in the graphic memory is not output automatically - a SHOW instruction is to be used.
+ - * The numbers from the stack are removed after the calculation in ADD, SUB, MUL, DIV, MOD, SQRT commands.
+ - ** All the GPU commands (WINDOWSET, POINT, CIRCLE, etc.) take the arguments from the stack (so they appear in the reversed order). The direct order of the arguments is shown in the brackets.
+ - *** The data written in the graphic memory is not output automatically - a SHOW instruction is to be used.
