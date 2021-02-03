@@ -7,7 +7,7 @@ The stack machine has the following memory units:
  - Graphic memory unit.
  # Supported commands
  |Command|Arguments number|Description|
- ---------------------
+ --------|----------------|-----------|
  |PUSH|1 number|Pushes the argument into the stack.|
  |POP|1 number|Pops the argument from the stack.|
  |ADD*|None|Calculates the sum of two top numbers from the stack and pushes the result into the stack.|
